@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="">
+    <title>Unity Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="#hero" id="brandLink" aria-label="На главную">
+                <span class="brand__mark" id="brandMark">ВШ</span>
+                <span id="brandRole">Unity Developer</span>
+            </a>
+
+            <div class="header-controls">
+                <nav class="site-nav" id="siteNav" aria-label="Основная навигация">
+                    <a href="#resume" data-nav="resume">Резюме</a>
+                    <a href="#projects" data-nav="projects">Проекты</a>
+                    <a href="#contacts" data-nav="contacts">Контакты</a>
+                </nav>
+                <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch language">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <h1 class="hero__title" id="profileName"></h1>
+                    <p class="hero__subtitle" id="profileRole"></p>
+                    <p class="hero__text" id="profileDescription"></p>
+                    <div class="hero__actions">
+                        <a class="btn" id="resumeDownload" href="#" download></a>
+                        <a class="btn btn--ghost" id="projectsCta" href="#projects"></a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card__avatar" id="avatarContainer">
+                        <div class="image-placeholder image-placeholder--avatar" id="avatarPlaceholder"></div>
+                        <img id="avatarImage" src="" alt="" hidden>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resume" id="resume">
+            <div class="container">
+                <h2 class="section__title" id="resumeTitle"></h2>
+                <div class="resume__grid">
+                    <section class="tile" id="educationTile">
+                        <h3 class="tile__title" id="educationTitle"></h3>
+                        <div id="educationList"></div>
+                    </section>
+
+                    <section class="tile" id="experienceTile">
+                        <h3 class="tile__title" id="experienceTitle"></h3>
+                        <div id="experienceList"></div>
+                    </section>
+
+                    <section class="tile" id="skillsTile">
+                        <h3 class="tile__title" id="skillsTitle"></h3>
+                        <div id="skillsList"></div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="section__title" id="projectsTitle"></h2>
+                <div class="projects__grid" id="projectsGrid"></div>
+            </div>
+        </section>
+
+        <section class="section contacts" id="contacts">
+            <div class="container">
+                <h2 class="section__title" id="contactsTitle"></h2>
+                <div class="contacts__grid" id="contactsGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__overlay" data-close></div>
+
+        <div class="modal__dialog" role="document">
+            <button class="modal__close" id="modalClose" type="button" data-close aria-label="Закрыть">×</button>
+
+            <div class="carousel" id="carousel">
+                <div class="carousel__viewport">
+                    <div class="carousel__track" id="carouselTrack"></div>
+                </div>
+                <button class="carousel__btn carousel__btn--prev" id="carouselPrev" type="button" aria-label="Назад">‹</button>
+                <button class="carousel__btn carousel__btn--next" id="carouselNext" type="button" aria-label="Вперёд">›</button>
+                <div class="carousel__dots" id="carouselDots"></div>
+            </div>
+
+            <div class="modal__body">
+                <h2 class="modal__title" id="modalTitle"></h2>
+
+                <section class="modal__section">
+                    <h3 class="modal__subtitle" id="modalShortTitle"></h3>
+                    <p class="modal__short" id="modalShort"></p>
+                </section>
+
+                <section class="modal__section">
+                    <h3 class="modal__subtitle" id="modalDetailsTitle"></h3>
+                    <div class="modal__full" id="modalFull"></div>
+                </section>
+
+                <section class="modal__section" id="modalLinksSection">
+                    <h3 class="modal__subtitle" id="modalLinksTitle"></h3>
+                    <div class="modal__links" id="modalLinks"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="status" id="status" hidden></div>
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>

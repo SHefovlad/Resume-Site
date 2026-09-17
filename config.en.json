@@ -1,0 +1,126 @@
+{
+    "meta": {
+        "title": "Vladislav Shefov — Unity Developer",
+        "description": "Portfolio and resume of a Unity developer"
+    },
+    "profile": {
+        "name": "Vladislav Shefov",
+        "role": "Unity Developer • Gameplay / Tools",
+        "description": "I develop games and interactive applications with Unity. Commercial development experience — X years.",
+        "avatar": "assets/avatar.jpg",
+        "resume": "assets/resume.pdf"
+    },
+    "resume": {
+        "education": [
+            {
+                "date": "2016 — 2020",
+                "title": "University name",
+                "degree": "Bachelor's degree, Software Engineering"
+            },
+            {
+                "date": "2020",
+                "title": "Unity Developer course",
+                "degree": "Online school, 6 months"
+            }
+        ],
+        "experience": [
+            {
+                "date": "2023 — Present",
+                "role": "Unity Developer",
+                "company": "Company name",
+                "duties": [
+                    "Implemented gameplay systems and features.",
+                    "Optimized performance (+X% FPS).",
+                    "Worked in a team of N people."
+                ]
+            },
+            {
+                "date": "2021 — 2023",
+                "role": "Unity Developer",
+                "company": "Company name",
+                "duties": [
+                    "Item 1",
+                    "Item 2",
+                    "Item 3"
+                ]
+            },
+            {
+                "date": "2020 — 2021",
+                "role": "Junior Unity Developer",
+                "company": "Company name",
+                "duties": [
+                    "Item 1",
+                    "Item 2"
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "title": "Languages & engine",
+                "items": ["C#", "Unity 2021 LTS — 6000", "DOTS / ECS", "HLSL / Shader Graph"]
+            },
+            {
+                "title": "Gameplay",
+                "items": ["Architecture (MVC, ECS, DI)", "Physics", "Animation", "AI", "UI Toolkit / uGUI", "Netcode / Photon"]
+            },
+            {
+                "title": "Tools",
+                "items": ["Git / Plastic SCM", "Zenject / VContainer", "Addressables", "Profiler"]
+            },
+            {
+                "title": "Platforms",
+                "items": ["Mobile", "PC / Steam", "WebGL", "Consoles"]
+            }
+        ]
+    },
+    "projects": [
+        "projects/en/project-1.json",
+        "projects/en/project-2.json",
+        "projects/en/project-3.json"
+    ],
+    "contacts": [
+        {
+            "icon": "github",
+            "label": "GitHub",
+            "value": "SHefovlad",
+            "url": "https://github.com/SHefovlad",
+            "copy": "https://github.com/SHefovlad"
+        },
+        {
+            "icon": "telegram",
+            "label": "Telegram",
+            "value": "@shefovlad",
+            "url": "https://t.me/shefovlad",
+            "copy": "@shefovlad"
+        },
+        {
+            "icon": "email",
+            "label": "Email",
+            "value": "shefovlad@gmail.com",
+            "url": "mailto:shefovlad@gmail.com",
+            "copy": "shefovlad@gmail.com"
+        }
+    ],
+    "ui": {
+        "resume": "Resume",
+        "education": "Education",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contacts": "Contacts",
+        "downloadResume": "Download resume (PDF)",
+        "viewProjects": "View projects",
+        "details": "Details →",
+        "short": "Short",
+        "detailsSection": "Details",
+        "links": "Links",
+        "copy": "Copy",
+        "close": "Close",
+        "previous": "Previous",
+        "next": "Next",
+        "slide": "Slide",
+        "missingImage": "No image",
+        "switchToEnglish": "Switch to English",
+        "switchToRussian": "Switch to Russian"
+    }
+}

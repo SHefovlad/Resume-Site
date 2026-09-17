@@ -1,0 +1,126 @@
+{
+    "meta": {
+        "title": "Владислав Шефов — Unity Developer",
+        "description": "Портфолио и резюме Unity-разработчика"
+    },
+    "profile": {
+        "name": "Владислав Шефов",
+        "role": "Unity Developer • Gameplay / Tools",
+        "description": "Разрабатываю игры и интерактивные приложения на Unity. Опыт коммерческой разработки — X лет.",
+        "avatar": "assets/avatar.jpg",
+        "resume": "assets/resume.pdf"
+    },
+    "resume": {
+        "education": [
+            {
+                "date": "2016 — 2020",
+                "title": "Название университета",
+                "degree": "Бакалавр, «Программная инженерия»"
+            },
+            {
+                "date": "2020",
+                "title": "Курс «Unity Developer»",
+                "degree": "Онлайн-школа, 6 месяцев"
+            }
+        ],
+        "experience": [
+            {
+                "date": "2023 — настоящее время",
+                "role": "Unity Developer",
+                "company": "Название компании",
+                "duties": [
+                    "Реализовал игровые системы и фичи.",
+                    "Оптимизировал производительность (+X% FPS).",
+                    "Работал в команде из N человек."
+                ]
+            },
+            {
+                "date": "2021 — 2023",
+                "role": "Unity Developer",
+                "company": "Название компании",
+                "duties": [
+                    "Пункт 1",
+                    "Пункт 2",
+                    "Пункт 3"
+                ]
+            },
+            {
+                "date": "2020 — 2021",
+                "role": "Junior Unity Developer",
+                "company": "Название компании",
+                "duties": [
+                    "Пункт 1",
+                    "Пункт 2"
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "title": "Языки и движок",
+                "items": ["C#", "Unity 2021 LTS — 6000", "DOTS / ECS", "HLSL / Shader Graph"]
+            },
+            {
+                "title": "Геймплей",
+                "items": ["Архитектура (MVC, ECS, DI)", "Физика", "Анимации", "AI", "UI Toolkit / uGUI", "Netcode / Photon"]
+            },
+            {
+                "title": "Инструменты",
+                "items": ["Git / Plastic SCM", "Zenject / VContainer", "Addressables", "Profiler"]
+            },
+            {
+                "title": "Платформы",
+                "items": ["Mobile", "PC / Steam", "WebGL", "Консоли"]
+            }
+        ]
+    },
+    "projects": [
+        "projects/ru/project-1.json",
+        "projects/ru/project-2.json",
+        "projects/ru/project-3.json"
+    ],
+    "contacts": [
+        {
+            "icon": "github",
+            "label": "GitHub",
+            "value": "SHefovlad",
+            "url": "https://github.com/SHefovlad",
+            "copy": "https://github.com/SHefovlad"
+        },
+        {
+            "icon": "telegram",
+            "label": "Telegram",
+            "value": "@shefovlad",
+            "url": "https://t.me/shefovlad",
+            "copy": "@shefovlad"
+        },
+        {
+            "icon": "email",
+            "label": "Email",
+            "value": "shefovlad@gmail.com",
+            "url": "mailto:shefovlad@gmail.com",
+            "copy": "shefovlad@gmail.com"
+        }
+    ],
+    "ui": {
+        "resume": "Резюме",
+        "education": "Образование",
+        "experience": "Опыт работы",
+        "skills": "Навыки",
+        "projects": "Проекты",
+        "contacts": "Контакты",
+        "downloadResume": "Скачать резюме (PDF)",
+        "viewProjects": "Смотреть проекты",
+        "details": "Подробнее →",
+        "short": "Кратко",
+        "detailsSection": "Подробно",
+        "links": "Ссылки",
+        "copy": "Скопировать",
+        "close": "Закрыть",
+        "previous": "Назад",
+        "next": "Вперёд",
+        "slide": "Слайд",
+        "missingImage": "Изображение отсутствует",
+        "switchToEnglish": "Переключить на английский",
+        "switchToRussian": "Переключить на русский"
+    }
+}
