@@ -734,6 +734,7 @@ ul { padding: 0; list-style: none; }
 
     .hero-card {
         width: min(100%, 420px);
+        margin-inline: auto;
     }
 
     .site-nav { gap: 14px; }

@@ -743,6 +743,7 @@ ul { padding: 0; list-style: none; }
 
     .hero-card {
         width: min(100%, 320px);
+        margin-inline: auto;
     }
 
     .section {
