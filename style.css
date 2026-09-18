@@ -354,6 +354,7 @@ ul { padding: 0; list-style: none; }
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
+    align-items: start;
 }
 
 .project-card {
@@ -384,6 +385,10 @@ ul { padding: 0; list-style: none; }
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.project-image.is-loading {
+    display: none;
 }
 
 .project-card__body {
@@ -424,13 +429,13 @@ ul { padding: 0; list-style: none; }
     font-weight: 800;
 }
 
-.contacts__grid {
+.links__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
-.contact-tile {
+.link-tile {
     position: relative;
     border: 1px solid var(--line);
     border-radius: 18px;
@@ -438,13 +443,13 @@ ul { padding: 0; list-style: none; }
     transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
-.contact-tile:hover {
+.link-tile:hover {
     transform: translateY(-2px);
     border-color: var(--line-dark);
     box-shadow: 0 14px 30px rgba(20,20,20,.07);
 }
 
-.contact-tile__link {
+.link-tile__link {
     min-height: 170px;
     display: flex;
     flex-direction: column;
@@ -455,24 +460,24 @@ ul { padding: 0; list-style: none; }
     text-align: center;
 }
 
-.contact-tile__icon {
+.link-tile__icon {
     width: 34px;
     height: 34px;
     color: var(--ink);
 }
 
-.contact-tile__icon svg {
+.link-tile__icon svg {
     width: 100%;
     height: 100%;
     fill: currentColor;
 }
 
-.contact-tile__label {
+.link-tile__label {
     color: var(--muted);
     font-size: 12px;
 }
 
-.contact-tile__value {
+.link-tile__value {
     max-width: 100%;
     color: var(--ink);
     font-size: 15px;
@@ -480,7 +485,7 @@ ul { padding: 0; list-style: none; }
     word-break: break-word;
 }
 
-.contact-tile__copy {
+.link-tile__copy {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -495,19 +500,19 @@ ul { padding: 0; list-style: none; }
     color: #88867f;
 }
 
-.contact-tile__copy:hover { background: rgba(0,0,0,.055); color: var(--ink); }
+.link-tile__copy:hover { background: rgba(0,0,0,.055); color: var(--ink); }
 
-.contact-tile__copy svg {
+.link-tile__copy svg {
     width: 17px;
     height: 17px;
     fill: currentColor;
     pointer-events: none;
 }
 
-.contact-tile__copy .icon-check { display: none; }
-.contact-tile__copy.is-copied { color: #15803d; }
-.contact-tile__copy.is-copied .icon-copy { display: none; }
-.contact-tile__copy.is-copied .icon-check { display: block; }
+.link-tile__copy .icon-check { display: none; }
+.link-tile__copy.is-copied { color: #15803d; }
+.link-tile__copy.is-copied .icon-copy { display: none; }
+.link-tile__copy.is-copied .icon-check { display: block; }
 
 .modal {
     position: fixed;
@@ -699,7 +704,7 @@ ul { padding: 0; list-style: none; }
     .hero__grid,
     .resume__grid,
     .projects__grid,
-    .contacts__grid {
+    .links__grid {
         grid-template-columns: 1fr;
     }
 

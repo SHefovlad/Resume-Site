@@ -6,79 +6,79 @@
     "profile": {
         "name": "Владислав Шевченко",
         "role": "Unity Developer",
-        "description": "Разрабатываю игры и интерактивные приложения на Unity. Опыт коммерческой разработки — X лет.",
+        "description": "Разрабатываю десктоп, мобильные и веб игры на Unity. Опыт коммерческой разработки - 2 года",
         "avatar": "assets/avatar.jpg",
         "resume": "assets/resume.pdf"
     },
     "resume": {
         "education": [
             {
-                "date": "2016 — 2020",
-                "title": "Название университета",
-                "degree": "Бакалавр, «Программная инженерия»"
-            },
-            {
-                "date": "2020",
-                "title": "Курс «Unity Developer»",
-                "degree": "Онлайн-школа, 6 месяцев"
+                "date": "2023 — 2027",
+                "title": "Высший Колледж Информатики при Новосибирском Государственном Университете",
+                "degree": "Специалист, «Компьютерные системы и программирование»"
             }
         ],
         "experience": [
             {
-                "date": "2023 — настоящее время",
+                "date": "2025 — настоящее время",
                 "role": "Unity Developer",
-                "company": "Название компании",
+                "company": "Gacha Shop Simulator",
                 "duties": [
-                    "Реализовал игровые системы и фичи.",
-                    "Оптимизировал производительность (+X% FPS).",
-                    "Работал в команде из N человек."
+                    "Изначально был вторым разработчиком в команде, но в итоге продолжительное время являюсь основным программистом.",
+                    "Разработал системы NPC, сохранений через Newtonsoft.Json и др; доработал уже имеющиеся системы.",
+                    "Работал в команде из 3 человек: я, геймдизайнер/аниматор/3д-художник, разработчик альфа-версии."
                 ]
             },
             {
-                "date": "2021 — 2023",
-                "role": "Unity Developer",
-                "company": "Название компании",
+                "date": "2025",
+                "role": "Преподаватель Unity для детей",
+                "company": "Летняя Школа Информатики и Программирования ВКИ НГУ",
                 "duties": [
-                    "Пункт 1",
-                    "Пункт 2",
-                    "Пункт 3"
+                    "Разработал учебный план для обучения детей Unity.",
+                    "Занимался непосредственно с учениками, преподавал материал, помогал разбираться с ошибками.",
+                    "Подготовил и представил проекты учеников на общей презентации."
                 ]
             },
             {
-                "date": "2020 — 2021",
-                "role": "Junior Unity Developer",
-                "company": "Название компании",
+                "date": "2024 — настоящее время",
+                "role": "Freelance Unity Developer",
+                "company": "FL.ru",
                 "duties": [
-                    "Пункт 1",
-                    "Пункт 2"
+                    "Учавствовал в создании или доработке 10+ проектов.",
+                    "Довел некоторые проекты до релиза.",
+                    "Накопил клиентскую базу и 100% положительных отзывов."
                 ]
             }
         ],
         "skills": [
             {
                 "title": "Языки и движок",
-                "items": ["C#", "Unity 2021 LTS — 6000", "DOTS / ECS", "HLSL / Shader Graph"]
+                "items": ["C#", "Unity 2022 — 6000.5", "Анимации", "Физика", "AI/NavMesh", "UI Toolkit", "Shader Graph"]
+            },
+            {
+                "title": "Архитектура",
+                "items": ["ООП", "SOLID"]
             },
             {
                 "title": "Геймплей",
-                "items": ["Архитектура (MVC, ECS, DI)", "Физика", "Анимации", "AI", "UI Toolkit / uGUI", "Netcode / Photon"]
+                "items": ["Базовый гейм-дизайн", "Базовый левел-дизайн"]
             },
             {
                 "title": "Инструменты",
-                "items": ["Git / Plastic SCM", "Zenject / VContainer", "Addressables", "Profiler"]
+                "items": ["Git", "GitHub", "GitLab", "Profiler"]
             },
             {
                 "title": "Платформы",
-                "items": ["Mobile", "PC / Steam", "WebGL", "Консоли"]
+                "items": ["Mobile", "PC / Steam", "WebGL / Яндекс Игры"]
             }
         ]
     },
     "projects": [
-        "projects/ru/project-1.json",
-        "projects/ru/project-2.json",
-        "projects/ru/project-3.json"
+        "projects/ru/gachashopsim.json",
+        "projects/ru/photosim.json",
+        "projects/ru/flasks.json"
     ],
-    "contacts": [
+    "links": [
         {
             "icon": "github",
             "label": "GitHub",
@@ -107,13 +107,12 @@
         "experience": "Опыт работы",
         "skills": "Навыки",
         "projects": "Проекты",
-        "contacts": "Контакты",
+        "links": "Ссылки",
         "downloadResume": "Скачать резюме (PDF)",
         "viewProjects": "Смотреть проекты",
         "details": "Подробнее →",
         "short": "Кратко",
         "detailsSection": "Подробно",
-        "links": "Ссылки",
         "copy": "Скопировать",
         "close": "Закрыть",
         "previous": "Назад",

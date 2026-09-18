@@ -1,0 +1,28 @@
+{
+    "title": "Gacha Shop Simulator",
+    "description": "Симулятор магазина блайнд-боксов, манги и т.п.",
+    "short": "Уютный десктопный симулятор магазина в low-poly стиле. Здесь можно не только продавать товары, регулировать цены и заниматься остальной рутиной shop-симуляторов, но и открывать блайнд-боксы и собирать коллекцию фигурок, что является второй основной механикой. Я разрабатывал проект не с нуля, до меня альфа-версию разработал другой программист. После его ухода я стал главным и единственным разработчиком. Игра доведена мной до релиза и выпущена в Steam, можете попробовать бесплатное демо!",
+    "tags": ["Unity", "Steam", "Simulator", "3D"],
+    "images": [
+        "../../assets/projects/gachashopsim/1.jpg",
+        "../../assets/projects/gachashopsim/2.jpg",
+        "../../assets/projects/gachashopsim/3.jpg",
+        "../../assets/projects/gachashopsim/4.jpg",
+        "../../assets/projects/gachashopsim/5.jpg"
+    ],
+    "details": [
+        ""
+    ],
+    "links": [
+        {
+            "label": "Скачать в Google Play",
+            "url": "#",
+            "primary": true
+        },
+        {
+            "label": "Исходники на GitHub",
+            "url": "#",
+            "primary": false
+        }
+    ]
+}

@@ -78,7 +78,7 @@
         "projects/en/project-2.json",
         "projects/en/project-3.json"
     ],
-    "contacts": [
+    "links": [
         {
             "icon": "github",
             "label": "GitHub",
@@ -107,13 +107,12 @@
         "experience": "Experience",
         "skills": "Skills",
         "projects": "Projects",
-        "contacts": "Contacts",
+        "links": "Links",
         "downloadResume": "Download resume (PDF)",
         "viewProjects": "View projects",
         "details": "Details →",
         "short": "Short",
         "detailsSection": "Details",
-        "links": "Links",
         "copy": "Copy",
         "close": "Close",
         "previous": "Previous",

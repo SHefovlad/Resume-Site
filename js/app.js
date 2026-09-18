@@ -36,8 +36,8 @@ const elements = {
     skillsList: $("#skillsList"),
     projectsTitle: $("#projectsTitle"),
     projectsGrid: $("#projectsGrid"),
-    contactsTitle: $("#contactsTitle"),
-    contactsGrid: $("#contactsGrid"),
+    linksTitle: $("#linksTitle"),
+    linksGrid: $("#linksGrid"),
     modal: $("#modal"),
     modalClose: $("#modalClose"),
     modalTitle: $("#modalTitle"),
@@ -55,8 +55,8 @@ const elements = {
     status: $("#status")
 };
 
-const CONTACT_ICONS = {
-    github: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.38 2.89-.39.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.39-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>`,
+const LINK_ICONS = {
+    github: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>`,
     telegram: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>`,
     email: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24l-8 5.33-8-5.33V6l8 5.33L20 6v2.24z"/></svg>`,
     link: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.59 13.41a2 2 0 0 0 2.82 0L16 10.82A2 2 0 1 0 13.18 8l-1.17 1.17-1.41-1.41 1.17-1.17a4 4 0 1 1 5.65 5.65l-2.59 2.59a4 4 0 0 1-5.65 0zm2.82-2.82a2 2 0 0 0-2.82 0L8 13.18A2 2 0 1 0 10.82 16l1.17-1.17 1.41 1.41-1.17 1.17a4 4 0 1 1-5.65-5.65l2.59-2.59a4 4 0 0 1 5.65 0z"/></svg>`
@@ -65,7 +65,6 @@ const CONTACT_ICONS = {
 function setText(element, value) {
     if (element) element.textContent = value ?? "";
 }
-
 function detectLanguage() {
     return (navigator.language || "").toLowerCase().startsWith("ru") ? "ru" : "en";
 }
@@ -190,7 +189,7 @@ function renderHeaderAndHero(config) {
     setText(elements.projectsCta, ui.viewProjects || "Projects");
     setText(elements.siteNav.querySelector('[data-nav="resume"]'), ui.resume || "Resume");
     setText(elements.siteNav.querySelector('[data-nav="projects"]'), ui.projects || "Projects");
-    setText(elements.siteNav.querySelector('[data-nav="contacts"]'), ui.contacts || "Contacts");
+    setText(elements.siteNav.querySelector('[data-nav="links"]'), ui.links || "Links");
 
     elements.languageSwitch.textContent = currentLanguage === "ru" ? "EN" : "RU";
     elements.languageSwitch.setAttribute(
@@ -308,21 +307,33 @@ function appendImageWithFallback(parent, path, alt, placeholderText, project) {
 
     const image = document.createElement("img");
     image.alt = alt || "";
-    image.loading = "lazy";
-    image.hidden = true;
+    image.className = "project-image is-loading";
+    parent.appendChild(image);
 
-    image.onload = () => {
+    const finalizeSuccess = () => {
         placeholder.hidden = true;
-        image.hidden = false;
+        image.classList.remove("is-loading");
     };
 
-    image.onerror = () => {
+    const finalizeError = () => {
         image.remove();
         placeholder.hidden = false;
     };
 
-    image.src = resolveProjectPath(project, path);
-    parent.appendChild(image);
+    // Если картинка уже в кэше — onload может не сработать, поэтому проверяем complete.
+    image.addEventListener("load", finalizeSuccess);
+    image.addEventListener("error", finalizeError);
+
+    const src = resolveProjectPath(project, path);
+    image.src = src;
+
+    if (image.complete) {
+        if (image.naturalWidth > 0) {
+            finalizeSuccess();
+        } else {
+            finalizeError();
+        }
+    }
 }
 
 function createProjectCard(project, index) {
@@ -382,43 +393,43 @@ function renderProjects(config, projects) {
     });
 }
 
-function renderContacts(config) {
-    setText(elements.contactsTitle, config.ui?.contacts || "Contacts");
-    elements.contactsGrid.innerHTML = "";
+function renderLinks(config) {
+    setText(elements.linksTitle, config.ui?.links || "Links");
+    elements.linksGrid.innerHTML = "";
 
-    (Array.isArray(config.contacts) ? config.contacts : []).forEach((contact) => {
+    (Array.isArray(config.links) ? config.links : []).forEach((linkItem) => {
         const tile = document.createElement("article");
-        tile.className = "contact-tile";
+        tile.className = "link-tile";
 
         const link = document.createElement("a");
-        link.className = "contact-tile__link";
-        link.href = contact.url || "#";
+        link.className = "link-tile__link";
+        link.href = linkItem.url || "#";
 
-        if (isExternalUrl(contact.url) && !/^mailto:|^tel:/i.test(contact.url)) {
+        if (isExternalUrl(linkItem.url) && !/^mailto:|^tel:/i.test(linkItem.url)) {
             link.target = "_blank";
             link.rel = "noopener noreferrer";
         }
 
         const icon = document.createElement("span");
-        icon.className = "contact-tile__icon";
-        icon.innerHTML = CONTACT_ICONS[contact.icon] || CONTACT_ICONS.link;
+        icon.className = "link-tile__icon";
+        icon.innerHTML = LINK_ICONS[linkItem.icon] || LINK_ICONS.link;
 
         const label = document.createElement("span");
-        label.className = "contact-tile__label";
-        label.textContent = contact.label || "";
+        label.className = "link-tile__label";
+        label.textContent = linkItem.label || "";
 
         const value = document.createElement("span");
-        value.className = "contact-tile__value";
-        value.textContent = contact.value || "";
+        value.className = "link-tile__value";
+        value.textContent = linkItem.value || "";
 
         link.append(icon, label, value);
         tile.appendChild(link);
 
-        if (contact.copy) {
+        if (linkItem.copy) {
             const copyButton = document.createElement("button");
             copyButton.type = "button";
-            copyButton.className = "contact-tile__copy";
-            copyButton.setAttribute("aria-label", `${config.ui?.copy || "Copy"} ${contact.label || ""}`);
+            copyButton.className = "link-tile__copy";
+            copyButton.setAttribute("aria-label", `${config.ui?.copy || "Copy"} ${linkItem.label || ""}`);
             copyButton.innerHTML = `
                 <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
@@ -432,7 +443,7 @@ function renderContacts(config) {
                 event.preventDefault();
                 event.stopPropagation();
 
-                if (!(await copyToClipboard(contact.copy))) return;
+                if (!(await copyToClipboard(linkItem.copy))) return;
 
                 copyButton.classList.add("is-copied");
                 clearTimeout(copyButton._timer);
@@ -442,7 +453,7 @@ function renderContacts(config) {
             tile.appendChild(copyButton);
         }
 
-        elements.contactsGrid.appendChild(tile);
+        elements.linksGrid.appendChild(tile);
     });
 }
 
@@ -548,22 +559,24 @@ function renderProjectModal(project) {
 
 function lockBodyScroll() {
     savedScrollY = window.scrollY || 0;
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${savedScrollY}px`;
-    document.body.style.left = "0";
-    document.body.style.right = "0";
-    document.body.style.width = "100%";
+    // Ничего не сдвигаем и не фиксируем body: просто запрещаем прокрутку фона.
+    // Так позиция скролла не меняется и нечему "ехать" обратно.
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     document.body.classList.add("modal-open");
 }
 
 function unlockBodyScroll() {
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.left = "";
-    document.body.style.right = "";
-    document.body.style.width = "";
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
     document.body.classList.remove("modal-open");
+    // Страховка на случай, если браузер всё же сбросил позицию: возвращаем мгновенно,
+    // без smooth-анимации.
+    const html = document.documentElement;
+    const prevBehavior = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
     window.scrollTo(0, savedScrollY);
+    html.style.scrollBehavior = prevBehavior;
 }
 
 function openModal(index) {
@@ -572,7 +585,6 @@ function openModal(index) {
 
     modalLastFocused = document.activeElement;
     renderProjectModal(project);
-
     elements.modal.classList.add("is-open");
     elements.modal.setAttribute("aria-hidden", "false");
     lockBodyScroll();
@@ -585,10 +597,8 @@ function closeModal() {
     elements.modal.setAttribute("aria-hidden", "true");
     unlockBodyScroll();
 
-    if (modalLastFocused && typeof modalLastFocused.focus === "function") {
-        modalLastFocused.focus();
+        modalLastFocused.focus({ preventScroll: true });
     }
-}
 
 function copyToClipboard(text) {
     if (navigator.clipboard && window.isSecureContext) {
@@ -640,7 +650,7 @@ async function loadLanguage(language) {
         renderHeaderAndHero(config);
         renderResume(config);
         renderProjects(config, projects);
-        renderContacts(config);
+        renderLinks(config);
         renderModalUi(config);
     } catch (error) {
         console.error(error);
