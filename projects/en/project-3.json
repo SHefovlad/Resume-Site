@@ -1,0 +1,30 @@
+{
+    "title": "Multiplayer Shooter",
+    "description": "A session-based shooter built with Netcode for GameObjects.",
+    "short": "A session-based shooter built with Netcode for GameObjects, an authoritative server and client-side prediction.",
+    "tags": ["Unity", "Netcode", "PC"],
+    "images": [
+        "../../assets/projects/project-3/01.jpg",
+        "../../assets/projects/project-3/02.jpg",
+        "../../assets/projects/project-3/03.jpg"
+    ],
+    "details": [
+        "A 4–8 player shooter prototype created to work with Unity networking and explore server-authoritative architecture.",
+        "Netcode for GameObjects is used as the foundation, with additional interpolation, reconciliation and client-side prediction systems implemented on top.",
+        "The server is authoritative: clients send intents, while the resulting game state is calculated by the server.",
+        "Unity Relay was used for test matchmaking, allowing matches to run without a separate dedicated server.",
+        "The project remained a prototype and was primarily used for practical work with network ticks, prediction and lag compensation."
+    ],
+    "links": [
+        {
+            "label": "Source code on GitHub",
+            "url": "#",
+            "primary": true
+        },
+        {
+            "label": "Devlog",
+            "url": "#",
+            "primary": false
+        }
+    ]
+}

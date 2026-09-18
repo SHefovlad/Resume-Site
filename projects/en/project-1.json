@@ -1,0 +1,31 @@
+{
+    "title": "Space Roguelike",
+    "description": "A mobile roguelike about survival in deep space.",
+    "short": "A mobile roguelike about survival in deep space. The player explores procedurally generated sectors, collects resources and fights hostile drones.",
+    "tags": ["Unity", "C#", "Mobile"],
+    "images": [
+        "../../assets/projects/project-1/01.jpg",
+        "../../assets/projects/project-1/02.jpg",
+        "../../assets/projects/project-1/03.jpg",
+        "../../assets/projects/project-1/04.jpg"
+    ],
+    "details": [
+        "The project was developed as a pet project with a potential Google Play release in mind. The goal was to build a complete gameplay loop: sector generation, exploration, combat, upgrades, death and meta-progression.",
+        "I was the sole developer and handled gameplay code, procedural generation, combat, UI, save data, analytics, advertising integration and Android builds.",
+        "Sectors are assembled from prepared chunks using a wave function collapse approach. This provides variation while keeping control over the overall level structure.",
+        "The combat system is based on ScriptableObject configurations for weapons, projectiles and enemies, allowing balance changes without rewriting gameplay logic.",
+        "Mobile optimization included object pooling, UI optimization and simplifying selected shaders."
+    ],
+    "links": [
+        {
+            "label": "Download on Google Play",
+            "url": "#",
+            "primary": true
+        },
+        {
+            "label": "Source code on GitHub",
+            "url": "#",
+            "primary": false
+        }
+    ]
+}

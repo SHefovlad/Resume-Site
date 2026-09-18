@@ -1,0 +1,30 @@
+{
+    "title": "Level Design Tool",
+    "description": "A Unity Editor extension for faster level assembly and object placement.",
+    "short": "A Unity Editor extension for faster level assembly and placement of gameplay objects in a scene.",
+    "tags": ["Unity", "Editor", "Tools"],
+    "images": [
+        "../../assets/projects/project-2/01.jpg",
+        "../../assets/projects/project-2/02.jpg",
+        "../../assets/projects/project-2/03.jpg"
+    ],
+    "details": [
+        "The tool was created to reduce repetitive manual work when assembling levels and placing objects in scenes.",
+        "The panel is built with UI Toolkit and runs directly inside the Unity Editor. It supports batch prefab placement, random rotation and scale, snap-to-grid and additional operations on selected objects.",
+        "Presets are provided for recurring layouts. A current object configuration can be saved and reused on other levels.",
+        "Preset data is stored using ScriptableObject, making it convenient to version and share through source control.",
+        "The tool also provides scene validation, including checks for missing components, duplicate objects and other potential issues before a build."
+    ],
+    "links": [
+        {
+            "label": "Open on GitHub",
+            "url": "#",
+            "primary": true
+        },
+        {
+            "label": "Documentation",
+            "url": "#",
+            "primary": false
+        }
+    ]
+}
