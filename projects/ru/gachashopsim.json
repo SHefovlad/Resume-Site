@@ -15,14 +15,9 @@
     ],
     "links": [
         {
-            "label": "Скачать в Google Play",
-            "url": "#",
+            "label": "Steam",
+            "url": "https://store.steampowered.com/app/4417480/Gacha_Shop_Simulator/",
             "primary": true
-        },
-        {
-            "label": "Исходники на GitHub",
-            "url": "#",
-            "primary": false
         }
     ]
 }

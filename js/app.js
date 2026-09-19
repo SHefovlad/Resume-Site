@@ -249,7 +249,7 @@ function renderExperience(items) {
         duties.className = "exp__duties";
         (Array.isArray(item.duties) ? item.duties : []).forEach((duty) => {
             const li = document.createElement("li");
-            li.textContent = duty;
+            li.textContent = "• " + duty;
             duties.appendChild(li);
         });
 
