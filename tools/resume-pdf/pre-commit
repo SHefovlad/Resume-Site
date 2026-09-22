@@ -1,0 +1,33 @@
+#!/bin/sh
+# Автосборка PDF-резюме перед коммитом.
+#
+# Устанавливается командой:  node tools/resume-pdf/build.mjs --install-hook
+# Пересборка запускается только если в коммит попали конфиги, проекты, аватар
+# или сам генератор. Пересобранные PDF добавляются в тот же коммит.
+
+set -e
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root"
+
+staged=$(git diff --cached --name-only --diff-filter=ACM)
+relevant=$(printf '%s\n' "$staged" | grep -E '^(config\.json|config\.en\.json|projects/|assets/avatar\.|tools/resume-pdf/)' || true)
+
+if [ -z "$relevant" ]; then
+    exit 0
+fi
+
+if ! command -v node >/dev/null 2>&1; then
+    echo "pre-commit: не найден node — PDF-резюме не пересобраны." >&2
+    exit 1
+fi
+
+echo "pre-commit: пересобираю PDF-резюме из конфигов..."
+if ! node tools/resume-pdf/build.mjs --assets; then
+    echo "pre-commit: сборка PDF не удалась, коммит прерван." >&2
+    echo "pre-commit: исправьте ошибку или пропустите проверку: git commit --no-verify" >&2
+    exit 1
+fi
+
+git add assets/resume.pdf assets/resume.en.pdf
+echo "pre-commit: PDF-резюме пересобраны и добавлены в коммит."

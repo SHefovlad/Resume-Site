@@ -99,6 +99,13 @@
             "value": "shefovlad@gmail.com",
             "url": "mailto:shefovlad@gmail.com",
             "copy": "shefovlad@gmail.com"
+        },
+        {
+            "icon": "flru",
+            "label": "FL.ru",
+            "value": "shefovlad",
+            "url": "https://www.fl.ru/users/shefovlad/portfolio/",
+            "copy": "https://www.fl.ru/users/shefovlad/portfolio/"
         }
     ],
     "ui": {
@@ -108,6 +115,7 @@
         "skills": "Skills",
         "projects": "Projects",
         "links": "Links",
+        "tags": "Tags",
         "downloadResume": "Download resume (PDF)",
         "viewProjects": "View projects",
         "details": "Details →",

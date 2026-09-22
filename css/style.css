@@ -421,7 +421,7 @@ ul { padding: 0; list-style: none; }
 
 .links__grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
 }
 
@@ -731,9 +731,12 @@ ul { padding: 0; list-style: none; }
 @media (max-width: 960px) {
     .hero__grid,
     .resume__grid,
-    .projects__grid,
-    .links__grid {
+    .projects__grid {
         grid-template-columns: 1fr;
+    }
+
+    .links__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .hero__grid {
@@ -750,6 +753,8 @@ ul { padding: 0; list-style: none; }
 
 @media (max-width: 720px) {
     .container { width: min(100% - 32px, var(--max)); }
+
+    .links__grid { grid-template-columns: 1fr; }
 
     .site-header__inner {
         min-height: 60px;

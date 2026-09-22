@@ -1,0 +1,148 @@
+/* Печатная тема для PDF-резюме (A4, 2 см поля).
+   Размеры подобраны под исходные assets/resume*.pdf: 18/16/14/13/12 pt, пустое поле 24 pt между блоками. */
+
+@page {
+    size: A4;
+    margin: 2cm;
+}
+
+/* Отступы в pt; компактный режим переопределяет их через :root в build.mjs. */
+:root {
+    --gap-sec: 24pt;
+    --gap-block: 22pt;
+    --gap-heading: 19pt;
+    --gap-title: 20pt;
+    --gap-body: 16pt;
+}
+
+html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-family: "Noto Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 1.3625;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* --- Шапка: фото обтекается текстом справа, как в исходных PDF --- */
+
+.head__name {
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.head__role {
+    margin-top: 10pt;
+    font-size: 16pt;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.head__desc {
+    margin-top: 27pt;
+}
+
+.head__photo,
+.head__photo-fallback {
+    float: right;
+    width: 194.6pt;
+    height: 194.6pt;
+    margin: 0 0 8pt 18pt;
+    object-fit: cover;
+}
+
+.head__photo-fallback {
+    display: grid;
+    place-items: center;
+    border: 1pt solid #000;
+    font-size: 40pt;
+    font-weight: 700;
+}
+
+/* --- Секции --- */
+
+.sec {
+    margin-top: var(--gap-sec);
+}
+
+.sec__title {
+    margin-bottom: var(--gap-heading);
+    font-size: 14pt;
+    font-weight: 700;
+    line-height: 1.2;
+    break-after: avoid;
+}
+
+.block {
+    break-inside: avoid;
+}
+
+.block + .block {
+    margin-top: var(--gap-block);
+}
+
+/* --- Ссылки, навыки, служебные строки --- */
+
+.lines .line,
+.skills .skill,
+.project__meta .line {
+    break-inside: avoid;
+}
+
+.entry__title {
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.2;
+    break-after: avoid;
+}
+
+.entry__date {
+    margin-top: var(--gap-title);
+}
+
+.entry__body {
+    margin-top: var(--gap-body);
+}
+
+/* --- Образование и опыт --- */
+
+.edu__date {
+    break-after: avoid;
+}
+
+.edu__title {
+    font-weight: 700;
+    break-after: avoid;
+}
+
+/* --- Проекты --- */
+
+.project__desc {
+    margin-top: var(--gap-title);
+    break-after: avoid;
+}
+
+.project__meta {
+    break-inside: avoid;
+}
