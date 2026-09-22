@@ -378,6 +378,10 @@ ul { padding: 0; list-style: none; }
     object-fit: cover;
 }
 
+.project-card__media img.is-contain {
+    object-fit: contain;
+}
+
 .project-card__body {
     padding: 19px;
 }
@@ -616,6 +620,10 @@ ul { padding: 0; list-style: none; }
     user-select: none;
     pointer-events: none;
     -webkit-user-drag: none;
+}
+
+.carousel__slide img.is-contain {
+    object-fit: contain;
 }
 
 .carousel__btn {

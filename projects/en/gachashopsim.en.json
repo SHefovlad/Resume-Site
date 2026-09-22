@@ -1,0 +1,26 @@
+{
+    "title": "Gacha Shop Simulator",
+    "description": "A simulator of a blind box, manga and merch shop.",
+    "short": "A cozy low-poly desktop shop simulator.",
+    "tags": ["Unity", "Steam", "Simulator", "3D"],
+    "images": [
+        "../../assets/projects/gachashopsim/1.jpg",
+        "../../assets/projects/gachashopsim/2.jpg",
+        "../../assets/projects/gachashopsim/3.jpg",
+        "../../assets/projects/gachashopsim/4.jpg",
+        "../../assets/projects/gachashopsim/5.jpg"
+    ],
+    "details": [
+        "Here you can not only sell goods, set prices and do the rest of the shop-simulator routine, but also open blind boxes and collect figurines, which is the second core mechanic.",
+        "I did not develop the project from scratch; before me the alpha version was made by another programmer. After he left, I became the main and only developer.",
+        "Here I developed the NPC system: customers and workers; carried out a large-scale refactoring of the scene switching and manager initialization systems; introduced a save system based on Newtonsoft.Json, and many smaller things besides.",
+        "The game was brought to release by me and published on Steam, so you can try the free demo! By the way, my name is in the credits in the settings."
+    ],
+    "links": [
+        {
+            "label": "Steam",
+            "url": "https://store.steampowered.com/app/4417480/Gacha_Shop_Simulator/",
+            "primary": true
+        }
+    ]
+}

@@ -15,7 +15,7 @@
             {
                 "date": "2023 — 2027",
                 "title": "Высший Колледж Информатики при Новосибирском Государственном Университете",
-                "degree": "Специалист, «Компьютерные системы и программирование»"
+                "degree": "Специалист, «Информационные системы и программирование»"
             }
         ],
         "experience": [
@@ -76,7 +76,7 @@
     "projects": [
         "projects/ru/gachashopsim.json",
         "projects/ru/photosim.json",
-        "projects/ru/flasks.json"
+        "projects/ru/colorlab.json"
     ],
     "links": [
         {

@@ -1,82 +1,82 @@
 {
     "meta": {
-        "title": "Vladislav Shefov — Unity Developer",
+        "title": "Vladislav Shevchenko — Unity Developer",
         "description": "Portfolio and resume of a Unity developer"
     },
     "profile": {
-        "name": "Vladislav Shefov",
-        "role": "Unity Developer • Gameplay / Tools",
-        "description": "I develop games and interactive applications with Unity. Commercial development experience — X years.",
+        "name": "Vladislav Shevchenko",
+        "role": "Unity Developer",
+        "description": "I develop desktop, mobile and web games in Unity. Commercial development experience — 2 years",
         "avatar": "assets/avatar.jpg",
-        "resume": "assets/resume.pdf"
+        "resume": "assets/resume.en.pdf"
     },
     "resume": {
         "education": [
             {
-                "date": "2016 — 2020",
-                "title": "University name",
-                "degree": "Bachelor's degree, Software Engineering"
-            },
-            {
-                "date": "2020",
-                "title": "Unity Developer course",
-                "degree": "Online school, 6 months"
+                "date": "2023 — 2027",
+                "title": "Higher College of Informatics at Novosibirsk State University (Russia)",
+                "degree": "Specialist degree, \"Information Systems and Programming\""
             }
         ],
         "experience": [
             {
-                "date": "2023 — Present",
+                "date": "2025 — Present",
                 "role": "Unity Developer",
-                "company": "Company name",
+                "company": "Gacha Shop Simulator",
                 "duties": [
-                    "Implemented gameplay systems and features.",
-                    "Optimized performance (+X% FPS).",
-                    "Worked in a team of N people."
+                    "Initially joined the team as the second developer, but for a long time I have been the main programmer.",
+                    "Developed NPC systems, save systems built on Newtonsoft.Json and others; improved the systems that were already there.",
+                    "Worked in a team of 3 people: me, a game designer/animator/3D artist, and the developer of the alpha version."
                 ]
             },
             {
-                "date": "2021 — 2023",
-                "role": "Unity Developer",
-                "company": "Company name",
+                "date": "2025",
+                "role": "Unity teacher for children",
+                "company": "Summer School of Informatics and Programming, Higher College of Informatics, NSU",
                 "duties": [
-                    "Item 1",
-                    "Item 2",
-                    "Item 3"
+                    "Designed the curriculum for teaching children Unity.",
+                    "Worked directly with the students, taught the material and helped them sort out their mistakes.",
+                    "Prepared and presented the students' projects at the final showcase."
                 ]
             },
             {
-                "date": "2020 — 2021",
-                "role": "Junior Unity Developer",
-                "company": "Company name",
+                "date": "2024 — Present",
+                "role": "Freelance Unity Developer",
+                "company": "FL.ru",
                 "duties": [
-                    "Item 1",
-                    "Item 2"
+                    "Took part in creating or improving 10+ projects.",
+                    "Brought some of the projects to release.",
+                    "Built up a client base and 100% positive reviews."
                 ]
             }
         ],
         "skills": [
             {
                 "title": "Languages & engine",
-                "items": ["C#", "Unity 2021 LTS — 6000", "DOTS / ECS", "HLSL / Shader Graph"]
+                "items": ["C#", "Unity 2022 — 6000.5", "Animation", "Physics", "AI/NavMesh", "UI Toolkit", "Shader Graph"]
+            },
+            {
+                "title": "Architecture",
+                "items": ["OOP", "SOLID"]
             },
             {
                 "title": "Gameplay",
-                "items": ["Architecture (MVC, ECS, DI)", "Physics", "Animation", "AI", "UI Toolkit / uGUI", "Netcode / Photon"]
+                "items": ["Basic game design", "Basic level design"]
             },
             {
                 "title": "Tools",
-                "items": ["Git / Plastic SCM", "Zenject / VContainer", "Addressables", "Profiler"]
+                "items": ["Git", "GitHub", "GitLab", "Profiler"]
             },
             {
                 "title": "Platforms",
-                "items": ["Mobile", "PC / Steam", "WebGL", "Consoles"]
+                "items": ["Mobile", "PC / Steam", "WebGL / Yandex Games"]
             }
         ]
     },
     "projects": [
-        "projects/en/project-1.json",
-        "projects/en/project-2.json",
-        "projects/en/project-3.json"
+        "projects/en/gachashopsim.en.json",
+        "projects/en/photosim.en.json",
+        "projects/en/colorlab.en.json"
     ],
     "links": [
         {

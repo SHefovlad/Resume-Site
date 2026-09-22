@@ -297,7 +297,21 @@ function renderResume(config) {
     renderSkills(resume.skills);
 }
 
-function appendImageWithFallback(parent, path, alt, placeholderText, project) {
+// Изображение в конфиге проекта задаётся либо строкой (по умолчанию cover —
+// заполнить блок с обрезкой), либо объектом { src, fit }, где fit: "cover" | "contain".
+function normalizeImage(entry) {
+    if (typeof entry === "string") return { src: entry, fit: "cover" };
+    if (entry && typeof entry === "object") {
+        return {
+            src: entry.src || entry.path || "",
+            fit: entry.fit === "contain" ? "contain" : "cover"
+        };
+    }
+    return { src: "", fit: "cover" };
+}
+
+function appendImageWithFallback(parent, entry, alt, placeholderText, project) {
+    const { src: path, fit } = normalizeImage(entry);
     const placeholder = document.createElement("div");
     placeholder.className = "image-placeholder image-placeholder--project";
     placeholder.textContent = placeholderText;
@@ -307,7 +321,7 @@ function appendImageWithFallback(parent, path, alt, placeholderText, project) {
 
     const image = document.createElement("img");
     image.alt = alt || "";
-    image.className = "project-image is-loading";
+    image.className = fit === "contain" ? "project-image is-loading is-contain" : "project-image is-loading";
     parent.appendChild(image);
 
     const finalizeSuccess = () => {

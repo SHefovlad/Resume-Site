@@ -50,7 +50,7 @@ Each project JSON contains:
 - `description`
 - `short`
 - `tags`
-- `images`
+- `images` — either a path string, or an object `{ "src": "path", "fit": "cover" | "contain" }`. `cover` (default) fills the frame and crops; `contain` fits the whole image inside the frame (for vertical screenshots).
 - `details`
 - `links` with `label`, `url`, and optional `primary`
 

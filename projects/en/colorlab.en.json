@@ -1,0 +1,31 @@
+{
+    "title": "Color Lab",
+    "description": "A casual game about pouring layers of liquid with an unusual mechanic.",
+    "short": "Games where you pour layers of liquid from flask to flask to gather all the layers of one color together — there are dozens of them. This game is one of a kind, because here you have to collect not one color but a gradient, and that changes things dramatically.",
+    "tags": ["Unity", "Mobile", "Casual", "2D"],
+    "images": [
+        "../../assets/projects/colorlab/1.png",
+        { "src": "../../assets/projects/colorlab/2.png", "fit": "contain" },
+        { "src": "../../assets/projects/colorlab/3.png", "fit": "contain" },
+        { "src": "../../assets/projects/colorlab/4.png", "fit": "contain" },
+        { "src": "../../assets/projects/colorlab/5.png", "fit": "contain" }
+    ],
+    "details": [
+        "Everyone has probably seen the ads for one of these games — pour the layers so that all the same ones end up together. But in this game the mechanic is significantly improved: you have to collect gradients.",
+        "And that, in fact, changes quite a lot. There are no identical colors where it is obvious what goes with what — no color repeats.",
+        "Besides the core mechanic, the game also includes all the corresponding extras: a shop, daily tasks, level loading via Json, etc.",
+        "The game was developed by me from scratch and brought to release, but unfortunately it never got released, so its source code is on my GitHub, where you can also download a ready Android build."
+    ],
+    "links": [
+        {
+            "label": "GitHub",
+            "url": "https://github.com/SHefovlad/Color-Lab",
+            "primary": true
+        },
+        {
+            "label": "GitHub (Build)",
+            "url": "https://github.com/SHefovlad/Color-Lab/releases",
+            "primary": false
+        }
+    ]
+}

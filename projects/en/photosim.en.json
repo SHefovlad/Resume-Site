@@ -1,0 +1,26 @@
+{
+    "title": "Photo Simulator",
+    "description": "An Android game where the player can feel like a real photographer.",
+    "short": "A game developed for Android devices: a photographer simulator with great attention to detail, where everything matters for a photo — pose, filter, zoom.",
+    "tags": ["Unity", "Android", "Simulator", "2D"],
+    "images": [
+        "../../assets/projects/photosim/1.png",
+        "../../assets/projects/photosim/2.png",
+        "../../assets/projects/photosim/3.png",
+        "../../assets/projects/photosim/4.png"
+    ],
+    "details": [
+        "I developed this game entirely from scratch — from prototype to release.",
+        "The hook of this game is that clients write to the player and indirectly hint at what kind of photos they want, while the player has to figure out when exactly and how to take them.",
+        "Everything is taken into account: whether the character is in frame, what pose they are in at the moment, which zoom, filter and crop are selected. Every characteristic of every photo is compared against the requirements set by the client.",
+        "Another interesting thing about this project is that I essentially built a messenger inside the game. A huge amount of work went into it, and with a bit of extra polish it could honestly be released as a real messenger :)",
+        "You can view and download the project on Google Play, link below."
+    ],
+    "links": [
+        {
+            "label": "Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.KosikDesign.PhotoSimulator&pli=1",
+            "primary": true
+        }
+    ]
+}
