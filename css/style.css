@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --bg: #f5f4ef;
     --paper: #fbfaf6;
     --ink: #151515;
@@ -222,7 +222,7 @@ ul { padding: 0; list-style: none; }
 .hero-card {
     background: var(--paper);
     border: 1px solid var(--line);
-    border-radius: 28px;
+    border-radius: 35px;
     padding: 18px;
     box-shadow: var(--shadow);
 }
